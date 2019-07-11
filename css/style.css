@@ -61,6 +61,7 @@ ul, li {
 .button_full:hover {
     border: 2px dotted #fff;
     background: #04574e;
+    cursor: pointer;
 }
 /*About*/
 .about {
@@ -84,4 +85,48 @@ ul, li {
     margin-bottom: 20px;
     font-family: 'Open Sans Semibold';
     font-size: 20px;
+}
+/*Our Services*/
+.services {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #282828;
+    background: #e4fdf9;
+    text-align: center;
+}
+.our_card {
+    background: #fff;
+    padding: 50px 40px 40px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+}
+.our_card:hover {
+    background: #00897b;
+    color: #fff;
+    box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+.our_card:hover .icon {
+    color: #fff;
+}
+.our_card:hover .button-services {
+    border: 2px solid #fff;
+    color: #fff;
+}
+.icon {
+    transform: 0.3s;
+    font-size: 60px;
+    color: #282828;
+}
+.button-services {
+    margin-top: 25px;
+    transition: 0.3s;
+    color: #282828;
+    text-transform: uppercase;
+    border: 2px solid #282828;
+    background: transparent;
+    padding: 10px 12px 10px;
+    font-family: 'Open Sans Semibold';
+}
+.button-services:hover {
+    cursor: pointer;
 }
