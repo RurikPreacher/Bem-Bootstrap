@@ -1,9 +1,8 @@
 @import 'fonts.css';
 
 body {
-    background: gray;
+    font-family: 'Open Sans';
 }
-
 ul, li {
     display: block;
     padding: 0;
@@ -27,4 +26,62 @@ ul, li {
 .menu__item a:hover {
     text-decoration: none;
     color: #868686;
+}
+/*header*/
+.header > div{
+    color: #fff;
+    text-align: center;
+    padding: 180px 0;
+    background-size: cover;
+    background-position: 0 100%;
+    background-image: url('../img/header.png');
+}
+.header__title {
+    font-size: 55px;
+}
+.header__text {
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.button {
+    padding: 10px 25px;
+    margin: 0 10px; /*Это противоречит спецификации БЭМ, знаю*/
+    color: #fff;
+    transition: 0.3s;
+}
+.button_empty {
+    background: transparent;
+    border: 2px solid #fff;
+}
+.button_full {
+    background: #00897b;
+    border: 2px solid #00897b;
+}
+.button_empty:hover,
+.button_full:hover {
+    border: 2px dotted #fff;
+    background: #04574e;
+}
+/*About*/
+.about {
+    padding-top: 120px;
+    padding-bottom: 125px;
+    color: #282828;
+    background: #fff;
+    text-align: center;
+}
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.about__text {
+    color: #212121;
+    font-size: 15px;
+    margin-bottom: 110px;
+}
+.about__h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
 }
