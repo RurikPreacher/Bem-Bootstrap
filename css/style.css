@@ -226,3 +226,43 @@ div[filter]:hover .text {
     background: #00897b;
     border: 2px solid #00897b; /*Нельзя сделать border: none; происходит скачёк блока вниз*/
 }
+/*Team*/
+.team {
+    padding-top: 165px;
+    padding-bottom: 125px;
+    color: #282828;
+    background: #fff;
+    text-align: center;
+}
+.team h4 {
+    font-size: 20px;
+    font-family: 'Open Sans Semibold';
+    margin-top: 30px;
+}
+.team p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+.icons a i {
+    transition: 0.3s;
+}
+.icons i:nth-child(1) {
+    color: #f0f1f1;
+}
+.icons i:nth-child(2) {
+    color: #00897b;
+}
+.icons a:hover i:nth-child(1) {
+    color: #3949ab;
+}
+.icons a:hover i:nth-child(2) {
+    color: #fff;
+}
+.multiple-items {
+    margin-top: 125px;
+    margin-bottom: 125px;
+}
