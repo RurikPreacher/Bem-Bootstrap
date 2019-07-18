@@ -137,6 +137,7 @@ ul, li {
     border: 2px solid #00897b;
 }
 .portfolio img {
+    max-width: 100%;
     margin-bottom: 30px;
 }
 .filter {
@@ -170,6 +171,7 @@ div[filter]:hover .text {
 .price {
     transition: 0.5s;
     background: #fff;
+    margin-bottom: 30px;
 }
 .price:hover {
     box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.39);
@@ -229,7 +231,7 @@ div[filter]:hover .text {
 /*Team*/
 .team {
     padding-top: 165px;
-    padding-bottom: 125px;
+    padding-bottom: 25px;
     color: #282828;
     background: #fff;
     text-align: center;
@@ -243,9 +245,13 @@ div[filter]:hover .text {
     font-size: 15px;
     margin-bottom: 30px;
 }
+.team img {
+    max-width: 100%;
+}
 .icons {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 .icons a i {
     transition: 0.3s;
@@ -282,7 +288,6 @@ div[filter]:hover .text {
 .blog {
     text-align: left;
     margin-top: 60px;
-    margin-left: 20px;
 }
 .blog a {
     font-size: 25px;
@@ -308,8 +313,8 @@ div[filter]:hover .text {
 .blog p {
     font-size: 15px;
 }
-.left, .right {
-    margin: 0 -40px;
+.blog__item {
+    width: 48%;
 }
 .button__blog {
     width: 220px;
@@ -393,4 +398,25 @@ div[filter]:hover .text {
 }
 .form {
     margin-top: 70px;
+}
+/*Button #toTop*/
+#toTop {
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    background: #00897b;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+    color: #000;
+}
+.menu__icon {
+    display: none;
 }
